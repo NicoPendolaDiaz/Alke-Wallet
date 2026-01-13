@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositar - Billetera Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <div id="deposit-section">
+            <h2>Depositar Fondos</h2>
+            <input type="number" id="deposit-amount" placeholder="Monto a depositar" min="0">
+            <div class="buttons">
+                <button id="btn-confirm-deposit" class="btn deposit">Confirmar</button>
+                <button class="btn withdraw btn-back">Cancelar</button>
+            </div>
+        </div>
+        <div class="message-box">
+            <p id="mensaje-feedback"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

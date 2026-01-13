@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos - Billetera Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <div id="transactions-section">
+            <h3>Resumen Financiero</h3>
+            <div class="summary-container">
+                <div class="summary-card">
+                    <span class="label">Ingresos</span>
+                    <span id="total-ingresos" class="amount text-green">$0.00</span>
+                </div>
+                <div class="summary-card">
+                    <span class="label">Gastos</span>
+                    <span id="total-gastos" class="amount text-red">$0.00</span>
+                </div>
+            </div>
+            <h3>Historial de Movimientos</h3>
+            <ul id="historial-lista">
+                <!-- Los items se generarán con JavaScript -->
+            </ul>
+            <button id="btn-borrar-historial" class="btn-clear">Borrar Historial</button>
+            <button class="btn withdraw btn-back" style="margin-top: 10px;">Volver</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

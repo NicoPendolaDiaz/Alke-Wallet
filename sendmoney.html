@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Dinero - Billetera Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <div id="send-section">
+            <h2>Enviar Dinero</h2>
+            <select id="send-destinatario" style="width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ced4da; border-radius: 4px; background: white;">
+                <option value="" disabled selected>Seleccione un contacto</option>
+                <option value="Juan Pérez">Juan Pérez</option>
+                <option value="María González">María González</option>
+                <option value="Carlos Rodríguez">Carlos Rodríguez</option>
+                <option value="Alquiler">Alquiler</option>
+            </select>
+            <input type="number" id="send-amount" placeholder="Monto a enviar" min="0">
+            <div class="buttons">
+                <button id="btn-confirm-send" class="btn deposit">Enviar</button>
+                <button class="btn withdraw btn-back">Cancelar</button>
+            </div>
+        </div>
+        <div class="message-box">
+            <p id="mensaje-feedback"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Billetera Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <div id="home-section">
+            <div class="header-row">
+                <h1>Mi Billetera</h1>
+                <button id="btn-logout" class="btn-small">Salir</button>
+            </div>
+            
+            <div class="balance-box">
+                <h2>Saldo Actual</h2>
+                <p id="saldo-display">$0.00</p>
+                <select id="moneda-select">
+                    <option value="CLP" selected>CLP 🇨🇱</option>
+                    <option value="USD">USD 🇺🇸</option>
+                    <option value="EUR">EUR 🇪🇺</option>
+                </select>
+            </div>
+
+            <div class="menu-grid">
+                <button id="nav-depositar" class="btn menu-btn">📥 Depositar</button>
+                <button id="nav-enviar" class="btn menu-btn">💸 Enviar Dinero</button>
+                <button id="nav-movimientos" class="btn menu-btn">📜 Movimientos</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
